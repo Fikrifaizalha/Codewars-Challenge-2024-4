@@ -12,3 +12,10 @@ function getCount(str) {
     ).length;
 }
 console.log(getCount("abracadabra"));
+
+// CARA KE 2:
+
+function getCount(str) {
+  return (str.match(/[aeiou]/gi) || []).length;
+}
+console.log(getCount("abracadabra"));
